@@ -15,7 +15,7 @@ const template = {
 
 const items = [
   { id: 1, template: 'https://tropy.org/v1/tropy#test-template', photos: [11, 12] },
-  { id: 2, template: 'https://tropy.org/v1/tropy#test-template', lists: [1] }
+  { id: 2, template: 'https://tropy.org/v1/tropy#test-template', lists: [1], tags: [1] }
 ]
 
 const metadata = {
@@ -65,11 +65,16 @@ const lists = {
   1: { name: 'list1' }
 }
 
+const tags = {
+  1: { name: 'mytag' }
+}
+
 module.exports = {
   template,
   items,
   metadata,
   props,
   photos,
-  lists
+  lists,
+  tags
 }
